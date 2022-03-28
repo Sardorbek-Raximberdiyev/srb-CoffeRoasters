@@ -3,7 +3,7 @@
 }
 
 *:focus{
-  outline: 2px dashed blue;
+  outline: 3px dotted deepskyblue;
   outline-offset: 2px;
 }
 
@@ -12,6 +12,9 @@ body{
   flex-direction: column;
   background-color: #fff;
   color: #000;
+  font-size: 50px;
+  line-height: 59px;
+  font-weight: 700;
   font-family: "Roboto", "Arial", sans-serif;
 }
 
@@ -82,8 +85,20 @@ body{
 }
 
 .sitenav-link {
+  display: flex;
   color: #333;
   text-decoration: none;
+  transition: color 0.4s ease, border 0.4s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.sitenav-link:hover{
+  color: crimson;
+  border-bottom: 2px solid crimson;
+}
+
+.sitenav-link:active{
+  opacity: 0.6;
 }
 
 
@@ -127,18 +142,21 @@ body{
 }
 
 .site-hero-link{
+  background-color: #0A775F;
+  border: 2px solid #0A775F;
+}
+
+.button{
   display: inline-block;
   padding: 14px 22px;
   border-radius: 100px;
   text-decoration: none;
   color: #fff;
-  background-color: #0A775F;
   font-size: 16px;
   line-height: 29px;
   font-weight: 500;
   text-transform: uppercase;
-  border: 2px solid #0A775F;
-
+  transition: color 0.4s ease, border 0.4s ease, background-color 0.4s ease;
 }
 
 .site-hero-link:hover{
@@ -147,7 +165,18 @@ body{
   color: #0A775F;
 }
 
-.site-hero-link:active{
+.site-work-link{
+  background-color: #C99B67;
+  border: 2px solid #C99B67;
+}
+
+.site-work-link:hover{
+  border: 2px solid #C99B67;
+  background-color: transparent;
+  color: #C99B67;
+}
+
+.button:active{
   opacity: 0.6;
 }
 
@@ -167,8 +196,6 @@ body{
   margin-bottom: 80px;
   text-transform: uppercase;
   font-size: 50px;
-  line-height: 59px;
-  font-weight: 700;
   text-align: center;
 }
 
@@ -221,8 +248,6 @@ body{
 
 
 /* SITE-FEATURE */
-.site-feature {
-}
 
 .site-feature-block {
   padding: 50px 30px;
@@ -243,9 +268,6 @@ body{
 .site-feature-title {
   margin-top: 0;
   margin-bottom: 10px;
-  font-size: 50px;
-  line-height: 59px;
-  font-weight: 700;
   color: #fff;
 }
 
@@ -255,6 +277,24 @@ body{
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
+}
+
+.site-feature-list-two{
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+.site-feature-item-two{
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+}
+
+.site-feature-item-two:not(:last-child){
+  margin-right: 393px;
 }
 
 .site-feature-list {
@@ -288,4 +328,122 @@ body{
   font-size: 18px;
   line-height: 28px;
   font-weight: 400;
+}
+
+
+/* SITE-WORS */
+
+.site-work-bloc {
+  padding: 50px 30px;
+  background-color: #0A775F;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+
+.site-work-title {
+  margin-top: 0;
+  margin-bottom: 80px;
+  color: #fff;
+  text-align: center;
+}
+
+.site-work-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.site-work-item {
+  width: 433px;
+  padding: 20px;
+  color: #333;
+  background-color: #fff;
+  margin-bottom: 60px;
+}
+
+.site-work-item:not(:last-child){
+  margin-right: 20px;
+}
+
+.site-work-item-namber {
+  margin-left: 328px;
+  margin-top: 0;
+  margin-bottom: 45px;
+  font-size: 64px;
+  line-height: 75px;
+  font-weight: 400;
+}
+
+.site-work-item-title {
+  width: 231px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 40px;
+  line-height: 47px;
+  font-weight: 500;
+}
+
+.site-work-item-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.site-work-btn{
+  text-align: center;
+}
+
+
+/* SITE-FOOTER */
+.site-footer{
+  padding-top: 65px;
+  padding-bottom: 65px;
+  background-color: #C99B67;
+}
+
+.site-footer-block {
+  padding-right: 50px;
+  padding-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sitenav-list:not(:last-child){
+  margin-right: 330px;
+}
+
+.sitenav-footer-item{
+  list-style-type: none;
+}
+
+.sitenav-footer-item:not(:last-child){
+  margin-right: 30px;
+}
+
+.site-footer-icon-img {
+  width: 30px;
+  height: 30px;
+}
+
+.site-footer-icon-img:hover{
+  opacity: 0.8;
+}
+
+.site-footer-icon-img:active{
+  opacity: 0.6;
+}
+
+.sitenav-footer-link{
+  display: flex;
 }
