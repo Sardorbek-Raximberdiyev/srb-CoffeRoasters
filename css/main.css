@@ -12,8 +12,6 @@ body{
   flex-direction: column;
   background-color: #fff;
   color: #000;
-  font-size: 50px;
-  line-height: 59px;
   font-weight: 700;
   font-family: "Roboto", "Arial", sans-serif;
 }
@@ -21,6 +19,8 @@ body{
 .container{
   width: 100%;
   max-width: 1440px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -29,16 +29,16 @@ body{
 /* SITE-HEADER */
 
 .site-header {
-  padding-top: 40px;
-  padding-bottom: 40px;
   background-color: #F3D7B7;
+  background-image: url(../images/hero-bc-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .site-header-block {
   display: flex;
   margin: 0;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding: 40px 30px;
   align-items: center;
   justify-content: space-between;
 }
@@ -77,7 +77,8 @@ body{
   font-size: 12px;
   line-height: 14px;
   list-style-type: none;
-  white-space: nowrap;
+  flex-shrink: 0;
+  /* white-space: nowrap; */
 }
 
 .sitenav-item:not(:last-child){
@@ -90,11 +91,12 @@ body{
   text-decoration: none;
   transition: color 0.4s ease, border 0.4s ease;
   border-bottom: 2px solid transparent;
+  text-transform: uppercase;
 }
 
 .sitenav-link:hover{
-  color: crimson;
-  border-bottom: 2px solid crimson;
+  color: #0A775F;
+  border-bottom: 2px solid #0A775F;
 }
 
 .sitenav-link:active{
@@ -110,10 +112,16 @@ body{
 
 .site-hero {
   background-color: #F3D7B7;
+  background-image: url(../images/hero-bc-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
 }
 
 .hero-block {
+  width: 1420px;
   display: flex;
+  justify-content: space-between;
   padding-left: 130px;
 }
 
@@ -142,6 +150,10 @@ body{
 }
 
 .site-hero-link{
+
+  display: inline-block;
+  margin: 0;
+  line-height: 19px;
   background-color: #0A775F;
   border: 2px solid #0A775F;
 }
@@ -153,10 +165,10 @@ body{
   text-decoration: none;
   color: #fff;
   font-size: 16px;
-  line-height: 29px;
   font-weight: 500;
   text-transform: uppercase;
   transition: color 0.4s ease, border 0.4s ease, background-color 0.4s ease;
+  margin: 0;
 }
 
 .site-hero-link:hover{
@@ -165,9 +177,17 @@ body{
   color: #0A775F;
 }
 
+.site-hero-link:active{
+  opacity: 0.6;
+  color: #fff;
+  background-color: #0A775F;
+
+}
+
 .site-work-link{
-  background-color: #C99B67;
   border: 2px solid #C99B67;
+  background-color: #C99B67;
+
 }
 
 .site-work-link:hover{
@@ -176,19 +196,23 @@ body{
   color: #C99B67;
 }
 
-.button:active{
+.site-work-link:active{
   opacity: 0.6;
+  color: #fff;
+  background-color: #C99B67;
+
 }
 
 .site-hero-img{
-  width: 100%;
+  width: 710px;
   height: 696px;
 }
+
 
 .site-collection-block {
   padding: 50px 143px;
   background-color: #F8F8F2;
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
 .site-collection-headeing {
@@ -196,6 +220,7 @@ body{
   margin-bottom: 80px;
   text-transform: uppercase;
   font-size: 50px;
+  line-height: 59px;
   text-align: center;
 }
 
@@ -212,21 +237,16 @@ body{
 .site-collection-img {
   width: 450px;
   height: 375px;
-  margin-right: 117px;
 }
 
-.site-collection-img:nth-child(2n){
-  margin-right: 0;
-  margin-left: 117px;
-}
-
-.site-collection-box{
+.site-collection-box:nth-child(1){
   padding-left: 157px;
+  padding-right: 94px;
 }
 
-.site-collection-box:nth-child(2n){
+.site-collection-box:nth-child(2){
+  padding-left: 117px;
   padding-right: 157px;
-  padding-left: 0;
 }
 
 .site-collection-box-title {
@@ -250,11 +270,9 @@ body{
 /* SITE-FEATURE */
 
 .site-feature-block {
-  padding: 50px 30px;
-  margin-left: 20px;
-  margin-right: 20px;
-  background-color: #C99B67;
-  margin-bottom: 290px;
+  padding: 0 30px;
+  background-image: url(../images/Rectangle-img.jpg);
+  background-repeat: no-repeat;
 }
 
 .site-feature-box {
@@ -268,7 +286,11 @@ body{
 .site-feature-title {
   margin-top: 0;
   margin-bottom: 10px;
+  padding-top: 50px;
+  font-size: 50px;
+  line-height: 59px;
   color: #fff;
+  text-transform: uppercase;
 }
 
 .site-feature-text {
@@ -300,8 +322,9 @@ body{
 .site-feature-list {
   display: flex;
   padding: 0;
+  margin-top: 0;
+  margin-bottom: 80px;
   list-style-type: none;
-  margin-bottom: -265px;
 }
 
 .site-feature-item:not(:last-child) {
@@ -336,8 +359,8 @@ body{
 .site-work-bloc {
   padding: 50px 30px;
   background-color: #0A775F;
-  margin-left: 20px;
-  margin-right: 20px;
+  background-image: url(../images/footter-top-img.jpg);
+  background-repeat: no-repeat;
   margin-bottom: 50px;
 }
 
@@ -345,7 +368,10 @@ body{
   margin-top: 0;
   margin-bottom: 80px;
   color: #fff;
+  font-size: 50px;
+  line-height: 59px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .site-work-list {
@@ -377,12 +403,13 @@ body{
 }
 
 .site-work-item-title {
-  width: 231px;
+  width: 250px;
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 40px;
   line-height: 47px;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .site-work-item-text {
@@ -394,6 +421,7 @@ body{
 }
 
 .site-work-btn{
+  line-height: 19px;
   text-align: center;
 }
 
@@ -402,10 +430,14 @@ body{
 .site-footer{
   padding-top: 65px;
   padding-bottom: 65px;
-  background-color: #C99B67;
+  background-color: #F3D7B7;
+  background-image: url(../images/hero-bc-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .site-footer-block {
+  width: 1440px;
   padding-right: 50px;
   padding-left: 50px;
   display: flex;
@@ -446,4 +478,32 @@ body{
 
 .sitenav-footer-link{
   display: flex;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .site-header{
+    background-image: url(../images/hero-bc-img@2x.jpg);
+  }
+
+  .site-hero{
+    background-image: url(../images/hero-bc-img@2x.jpg);
+  }
+
+  .site-feature-block{
+    background-image: url(../images/Rectangle-img@2x.jpg);
+  }
+
+  .site-work-bloc {
+    background-image: url(../images/footer-top-img@2x.jpg);
+  }
+
+  .site-footer{
+    background-image: url(../images/hero-bc-img@2x.jpg);
+  }
 }
