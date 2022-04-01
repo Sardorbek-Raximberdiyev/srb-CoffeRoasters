@@ -12,7 +12,7 @@ body{
   flex-direction: column;
   background-color: #fff;
   color: #000;
-  font-weight: 700;
+  font-weight: 400;
   font-family: "Roboto", "Arial", sans-serif;
 }
 
@@ -77,8 +77,8 @@ body{
   font-size: 12px;
   line-height: 14px;
   list-style-type: none;
-  flex-shrink: 0;
-  /* white-space: nowrap; */
+  /* flex-shrink: 0; */
+  white-space: nowrap;
 }
 
 .sitenav-item:not(:last-child){
@@ -126,10 +126,14 @@ body{
 }
 
 .site-hero-box {
-  flex-shrink: 0;
   width: 464px;
   margin-right: 116px;
   padding-top: 136px;
+  flex-shrink: 0;
+}
+
+.site-hero-box-about{
+  width: 372px;
 }
 
 .site-hero-title {
@@ -139,6 +143,10 @@ body{
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 24px;
+}
+
+.site-hero-title-about{
+  width: 265x;
 }
 
 .site-hero-text {
@@ -169,6 +177,7 @@ body{
   text-transform: uppercase;
   transition: color 0.4s ease, border 0.4s ease, background-color 0.4s ease;
   margin: 0;
+  white-space: nowrap;
 }
 
 .site-hero-link:hover{
@@ -208,10 +217,16 @@ body{
   height: 696px;
 }
 
+.site-hero-img-about{
+  width: 710px;
+  height: 596px;
+}
+
 
 .site-collection-block {
   padding: 50px 143px;
   background-color: #F8F8F2;
+  background-image: url(../images/oq-bijr-bijr.jpg);
   margin-bottom: 20px;
 }
 
@@ -241,7 +256,7 @@ body{
 
 .site-collection-box:nth-child(1){
   padding-left: 157px;
-  padding-right: 94px;
+  padding-right: 97px;
 }
 
 .site-collection-box:nth-child(2){
@@ -266,6 +281,40 @@ body{
   font-weight: 400;
 }
 
+/* ABOUT  */
+
+.site-commitment {
+  margin-bottom: 80px;
+}
+
+.site-commitment-block {
+  display: flex;
+  padding: 160px 64px 200px 165px;
+  background-image: url(../images/commitment-bc-img.png);
+}
+
+.site-commitment-block-img {
+  width: 360px;
+  height: 364px;
+  margin-right: 185px;
+  object-fit: cover;
+}
+
+.site-commitment-box-title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.site-commitment-box-text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+}
 
 /* SITE-FEATURE */
 
@@ -313,6 +362,7 @@ body{
   width: 60px;
   height: 60px;
   background-color: #fff;
+  border: 4px solid #C99B67;
 }
 
 .site-feature-item-two:not(:last-child){
@@ -353,6 +403,48 @@ body{
   font-weight: 400;
 }
 
+
+/* ABOUT-FEATURE  */
+.about-festure {
+  margin-bottom: 20px;
+}
+
+.about-feature-block {
+  display: flex;
+  padding: 0 30px 90px 143px;
+  background-image: url(../images/Rectangle-img.jpg);
+  background-repeat: no-repeat;
+  background-size: 1400px 510px;
+  background-position: bottom center;
+}
+
+.about-feature-box {
+  padding-top: 180px;
+  margin-right: 38px;
+  color: #fff;
+}
+
+.about-feature-title {
+  width: 410px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 50px;
+  line-height: 59px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-feature-text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.about-feature-img{
+  width: 550px;
+  height: 500px;
+}
 
 /* SITE-WORS */
 
@@ -426,6 +518,71 @@ body{
 }
 
 
+/* ABOUT-WORK  */
+
+.about-work {
+  margin-bottom: 50px;
+}
+
+.about-work-block {
+  padding: 50px 30px 100px;
+  background-image: url(../images/footter-top-img.jpg);
+  background-repeat: no-repeat;
+}
+
+.about-work-title {
+  margin-top: 0;
+  margin-bottom: 80px;
+  font-size: 50px;
+  line-height: 59px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about-work-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.about-work-item {
+  width: 433px;
+  padding: 140px 150px 40px 20px;
+  background-color: #fff;
+}
+
+.about-work-item:not(:last-child){
+  margin-right: 20px;
+}
+
+.about-work-item-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 40px;
+  line-height: 47px;
+  font-weight: 700;
+  color: #333;
+}
+
+.about-work-item-box {
+  color: #333;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.about-work-item-box-text {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.about-work-item-box-link {
+  text-decoration: none;
+  color: #333;
+}
+
 /* SITE-FOOTER */
 .site-footer{
   padding-top: 65px;
@@ -437,9 +594,8 @@ body{
 }
 
 .site-footer-block {
-  width: 1440px;
-  padding-right: 50px;
-  padding-left: 50px;
+    padding-right: 30px;
+  padding-left: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -505,5 +661,13 @@ only screen and (                min-resolution: 2dppx) {
 
   .site-footer{
     background-image: url(../images/hero-bc-img@2x.jpg);
+  }
+
+  .site-collection-block{
+    background-image: url(../images/oq-bijr-bijr@2x.jpg);
+  }
+
+  .site-commitment-block{
+    background-image: url(../images/commitment-bc-img@2x.png);
   }
 }
