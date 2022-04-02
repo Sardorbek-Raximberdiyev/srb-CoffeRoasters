@@ -7,6 +7,11 @@
   outline-offset: 2px;
 }
 
+.site-work-link:focus{
+  outline: 3px dotted #fff;
+
+}
+
 html {
   height: 100%;
 }
@@ -155,7 +160,7 @@ body{
 }
 
 .site-hero-title-about{
-  width: 265x;
+  width: 265px;
 }
 
 .site-hero-text {
@@ -464,6 +469,7 @@ body{
   background-repeat: no-repeat;
   margin-bottom: 50px;
 }
+
 
 .about-work-block {
   margin-bottom: 20px;
