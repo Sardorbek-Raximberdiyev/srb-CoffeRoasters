@@ -3,12 +3,17 @@
 }
 
 *:focus{
-  outline: 3px dotted deepskyblue;
+  outline: 3px dotted #0A775F;
   outline-offset: 2px;
+}
+
+html {
+  height: 100%;
 }
 
 body{
   display: flex;
+  height: 100%;
   flex-direction: column;
   background-color: #fff;
   color: #000;
@@ -116,6 +121,10 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 20px;
+}
+
+.create-hero{
+  margin-bottom: 10px;
 }
 
 .hero-block {
@@ -456,6 +465,10 @@ body{
   margin-bottom: 50px;
 }
 
+.about-work-block {
+  margin-bottom: 20px;
+}
+
 .site-work-title {
   margin-top: 0;
   margin-bottom: 80px;
@@ -486,7 +499,7 @@ body{
 }
 
 .site-work-item-namber {
-  margin-left: 328px;
+  margin-left: 325px;
   margin-top: 0;
   margin-bottom: 45px;
   font-size: 64px;
@@ -495,7 +508,7 @@ body{
 }
 
 .site-work-item-title {
-  width: 250px;
+  width: 265px;
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 40px;
@@ -554,6 +567,28 @@ body{
   background-color: #fff;
 }
 
+.about-work-item-one{
+  background-image: url(../images/united.png);
+  background-size: 120px 143px;
+  background-repeat: no-repeat;
+  background-position: 258px 45px;
+}
+
+.about-work-item-two{
+  background-image: url(../images/canada.png);
+  background-size: 120px 120px;
+  background-repeat: no-repeat;
+  background-position: 258px 45px;
+}
+
+.about-work-item-theree{
+  background-image: url(../images/australia.png);
+  background-size: 120px 107px;
+  background-repeat: no-repeat;
+  background-position: 258px 45px;
+}
+
+
 .about-work-item:not(:last-child){
   margin-right: 20px;
 }
@@ -568,9 +603,14 @@ body{
 }
 
 .about-work-item-box {
+  width: 141px;
   color: #333;
   font-size: 18px;
   line-height: 28px;
+}
+
+.about-work-item-title-two{
+  padding-top: 47px;
 }
 
 .about-work-item-box-text {
@@ -579,8 +619,17 @@ body{
 }
 
 .about-work-item-box-link {
+  font-weight: 700;
   text-decoration: none;
   color: #333;
+}
+
+.about-work-item-box-link:hover{
+  color: #0A775F;
+}
+
+.about-work-item-box-link:active{
+  opacity: 0.6;
 }
 
 /* SITE-FOOTER */
