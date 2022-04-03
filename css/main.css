@@ -159,9 +159,6 @@ body{
   margin-bottom: 24px;
 }
 
-.site-hero-title-about{
-  width: 265px;
-}
 
 .site-hero-text {
   margin-top: 0;
@@ -172,7 +169,6 @@ body{
 }
 
 .site-hero-link{
-
   display: inline-block;
   margin: 0;
   line-height: 19px;
@@ -362,6 +358,7 @@ body{
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
+  opacity: 0.8;
 }
 
 .site-feature-list-two{
@@ -471,7 +468,8 @@ body{
 }
 
 
-.about-work-block {
+.about-work-block-plan-a {
+  padding: 80px 30px;
   margin-bottom: 20px;
 }
 
@@ -493,11 +491,14 @@ body{
 }
 
 .site-work-item {
+  margin-bottom: 60px;
+}
+
+.site-work-item-global {
   width: 433px;
   padding: 20px;
   color: #333;
   background-color: #fff;
-  margin-bottom: 60px;
 }
 
 .site-work-item:not(:last-child){
@@ -545,6 +546,9 @@ body{
 
 .about-work-block {
   padding: 50px 30px 100px;
+}
+
+.about-block{
   background-image: url(../images/footter-top-img.jpg);
   background-repeat: no-repeat;
 }
@@ -636,6 +640,11 @@ body{
 
 .about-work-item-box-link:active{
   opacity: 0.6;
+}
+
+
+.about-work-item-a{
+  margin-bottom: 0;
 }
 
 /* SITE-FOOTER */
