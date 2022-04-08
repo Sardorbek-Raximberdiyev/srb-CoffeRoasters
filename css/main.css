@@ -84,7 +84,7 @@ body{
 
 .sitenav-item {
   font-weight: 700;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 14px;
   list-style-type: none;
   /* flex-shrink: 0; */
@@ -102,6 +102,10 @@ body{
   transition: color 0.4s ease, border 0.4s ease;
   border-bottom: 2px solid transparent;
   text-transform: uppercase;
+}
+
+.sitenav-link-header{
+  font-size: 12px;
 }
 
 .sitenav-link:hover{
@@ -129,7 +133,7 @@ body{
 }
 
 .create-hero{
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .hero-block {
@@ -178,7 +182,9 @@ body{
 
 .button{
   display: inline-block;
+  margin: 0;
   padding: 14px 22px;
+  border: 0;
   border-radius: 100px;
   text-decoration: none;
   color: #fff;
@@ -186,7 +192,6 @@ body{
   font-weight: 500;
   text-transform: uppercase;
   transition: color 0.4s ease, border 0.4s ease, background-color 0.4s ease;
-  margin: 0;
   white-space: nowrap;
 }
 
@@ -367,6 +372,9 @@ body{
   margin-top: 0;
   margin-bottom: 20px;
   list-style-type: none;
+  background-image: url(../images/hr-bc-img.png);
+  background-repeat: no-repeat;
+  background-position: 25px center;
 }
 
 .site-feature-item-two{
@@ -520,7 +528,7 @@ body{
   margin-bottom: 10px;
   font-size: 40px;
   line-height: 47px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -647,6 +655,160 @@ body{
   margin-bottom: 0;
 }
 
+
+/* create-work */
+ul{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.create-plan-container {
+  display: flex;
+  padding: 50px 142px 50px 30px;
+  justify-content: space-between;
+  background-image: url(../images/commitment-bc-img.png);
+}
+
+.create-left-box-item{
+  width: 660px;
+  margin-bottom: 60px;
+}
+
+.create-left-box-item:last-child{
+  margin-bottom: 100px;
+}
+
+.create-left-item-title {
+  display: inline-block;
+  margin-top: 0;
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 500;
+  margin-bottom: 35px;
+  text-decoration: none;
+  color: #555;
+}
+
+.create-left-item-title:hover{
+  color: #000;
+  border-bottom: 3px dashed #C99B67;
+  margin-bottom: 32px;
+}
+
+.create-left-item-title-last{
+  margin-bottom: 0;
+}
+
+.create-box-title{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.create-left-heading {
+  margin: 0;
+  margin-right: 44px;
+  font-size: 40px;
+  line-height: 47px;
+  font-weight: 700;
+}
+
+.create-btn{
+  width: 20px;
+  height: 20px;
+  border: 0;
+  background-image: url(../images/icon-buttom.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 17px 14px;
+}
+
+.create-left-list-child {
+  display: flex;
+}
+
+.create-left-list-child-dn{
+  display: none;
+}
+
+.create-left-item-child {
+  width: 206px;
+  min-height: 220px;
+  padding: 30px 16px;
+  color: #333;
+  background-image: url(../images/Rectangle-create.png);
+  background-repeat: no-repeat;
+  transition: background-color 0.4s ease;
+}
+
+.create-left-item-child:hover{
+  color: #fff;
+  background-color: #0A775F;
+}
+
+.create-left-item-child:not(:last-child){
+  margin-right: 20px;
+}
+
+.create-left-title-child {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+.create-left-text-child {
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.create-feature-box {
+  width: 660px;
+  margin-bottom: 20px;
+  padding: 40px 20px;
+  color: #fff;
+  background-color: #C99B67;
+}
+
+.create-feature-title {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+.create-feature-text {
+  margin: 0;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 500;
+}
+
+span{
+  color: #333;
+}
+
+.button-create {
+  border: 2px solid #0A775F;
+  background-color: #0A775F;
+}
+
+.button-create:hover{
+  border: 2px solid #0A775F;
+  background-color: transparent;
+  color: #0A775F;
+}
+
+.button-create:active{
+  color: #fff;
+  background-color: #0A775F;
+  opacity: 0.6;
+}
+
+
 /* SITE-FOOTER */
 .site-footer{
   padding-top: 65px;
@@ -733,5 +895,9 @@ only screen and (                min-resolution: 2dppx) {
 
   .site-commitment-block{
     background-image: url(../images/commitment-bc-img@2x.png);
+  }
+
+  .create-left-item-child{
+    background-image: url(../images/Rectangle-create@2x.png);
   }
 }
