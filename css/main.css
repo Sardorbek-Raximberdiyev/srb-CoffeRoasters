@@ -84,8 +84,6 @@ body{
 
 .sitenav-item {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 14px;
   list-style-type: none;
   /* flex-shrink: 0; */
   white-space: nowrap;
@@ -98,14 +96,17 @@ body{
 .sitenav-link {
   display: flex;
   color: #333;
+  font-size: 12px;
+  line-height: 14px;
   text-decoration: none;
   transition: color 0.4s ease, border 0.4s ease;
   border-bottom: 2px solid transparent;
   text-transform: uppercase;
 }
 
-.sitenav-link-header{
-  font-size: 12px;
+.sitenav-link-footer {
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .sitenav-link:hover{
