@@ -743,14 +743,21 @@ ul{
   transition: background-color 0.4s ease;
 }
 
-.create-left-item-child:hover{
-  color: #fff;
-  background-color: #0A775F;
-}
-
 .create-left-item-child:not(:last-child){
   margin-right: 20px;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 
 .create-left-title-child {
   margin-top: 0;
@@ -812,6 +819,16 @@ span{
   background-color: #0A775F;
   opacity: 0.6;
 }
+.checkbox:checked + label {
+  color: #fff;
+  background-color: #0A775F;
+}
+
+.checkbox:checked + label > span{
+  color: #fff;
+
+}
+
 
 
 /* SITE-FOOTER */

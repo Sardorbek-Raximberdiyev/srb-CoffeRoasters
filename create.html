@@ -77,15 +77,15 @@
     </div>
   </div>
 
-  <section class="about-menu">
+  <form class="about-menu">
     <div class="container">
       <div class="create-plan-container">
         <ul class="create-left-list">
-          <li class="create-left-item"><a class="create-left-item-title" href="#">01 Preferences</a></li>
-          <li class="create-left-item"><a class="create-left-item-title" href="#">02 Bean Type</a></li>
-          <li class="create-left-item"><a class="create-left-item-title" href="#">03 Quantity</a></li>
-          <li class="create-left-item"><a class="create-left-item-title" href="#">04 Grind Option</a></li>
-          <li class="create-left-item"><a class="create-left-item-title create-left-item-title-last" href="#">05 Deliveries</a></li>
+          <li class="create-left-item"><a class="create-left-item-title" href="one">01 Preferences</a></li>
+          <li class="create-left-item"><a class="create-left-item-title" href="two">02 Bean Type</a></li>
+          <li class="create-left-item"><a class="create-left-item-title" href="three">03 Quantity</a></li>
+          <li class="create-left-item"><a class="create-left-item-title" href="four">04 Grind Option</a></li>
+          <li class="create-left-item"><a class="create-left-item-title create-left-item-title-last" href="five">05 Deliveries</a></li>
         </ul>
         <div class="create-wrapper">
           <div class="create-left-box">
@@ -96,38 +96,50 @@
                     <button class="create-btn"></button>
                   </div>
                   <div class="create-left-list-child">
-                    <div class="create-left-item-child">
-                      <h3 class="create-left-title-child">Capsule</h3>
-                      <p class="create-left-text-child">Compatible with Nespresso systems and similar brewers</p>
-                    </div>
-                    <div class="create-left-item-child">
-                      <h3 class="create-left-title-child">Filter</h3>
-                      <p class="create-left-text-child">For pour over or drip methods like Aeropress, Chemex, and V60</p>
-                    </div>
-                    <div class="create-left-item-child">
-                      <h3 class="create-left-title-child">Espresso</h3>
-                      <p class="create-left-text-child">Dense and finely ground beans for an intense, flavorful experience</p>
-                    </div>
+                    <input id="ids" class="checkbox visually-hidden" name="first" type="radio">
+                    <label for="ids" class="create-left-item-child">
+                      <span>
+                        <h3 class="create-left-title-child">Capsule</h3>
+                        <p class="create-left-text-child">Compatible with Nespresso systems and similar brewers</p>
+                      </span>
+                    </label>
+                    <input id="idas" class="checkbox visually-hidden" name="first" type="radio">
+                    <label for="idas" class="create-left-item-child">
+                      <span>
+                        <h3 class="create-left-title-child">Filter</h3>
+                        <p class="create-left-text-child">For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                      </span>
+                    </label>
+                    <input class="checkbox visually-hidden"  id="abc" name="first" type="radio">
+                    <label for="abc" class="create-left-item-child">
+                      <span>
+                        <h3 class="create-left-title-child">Espresso</h3>
+                        <p class="create-left-text-child">Dense and finely ground beans for an intense, flavorful experience</p>
+                      </span>
+                    </label>
                   </div>
               </li>
-              <li class="create-left-box-item">
+              <li class="create-left-box-item" id="two">
                   <div class="create-box-title">
                     <h3 class="create-left-heading">What type of coffee?</h3>
                     <button class="create-btn"></button>
                   </div>
                   <div class="create-left-list-child create-left-list-child-dn">
-                    <div class="create-left-item-child">
+                    <input class="checkbox visually-hidden"  id="abcd" name="two" type="radio">
+                    <label class="create-left-item-child" for="abcd">
                       <h3 class="create-left-title-child">Single Origin</h3>
                       <p class="create-left-text-child">Distinct, high quality coffee from a specific family-owned farm</p>
-                    </div>
-                    <div class="create-left-item-child">
+                    </label>
+                    <input class="checkbox visually-hidden"  id="abce" name="two" type="radio">
+                    <label class="create-left-item-child" for="abce">
                       <h3 class="create-left-title-child">Decaf</h3>
                       <p class="create-left-text-child">Just like regular coffee, except the caffeine has been removed</p>
-                    </div>
-                    <div class="create-left-item-child">
+                    </label>
+                    <input class="checkbox visually-hidden"  id="abcg" name="two" type="radio">
+                    <label class="create-left-item-child" for="abcg">
                       <h3 class="create-left-title-child">Blended</h3>
                       <p class="create-left-text-child">Combination of two or three dark roasted beans of organic coffees</p>
-                    </div>
+                    </label>
                   </div>
               </li>
               <li class="create-left-box-item">
@@ -136,18 +148,21 @@
                     <button class="create-btn"></button>
                   </div>
                   <div class="create-left-list-child create-left-list-child-dn">
-                    <div class="create-left-item-child">
+                    <input class="checkbox visually-hidden"  id="aabb" name="theree" type="radio">
+                    <label class="create-left-item-child" for="aabb">
                       <h3 class="create-left-title-child">250g</h3>
                       <p class="create-left-text-child">Perfect for the solo drinker. Yields about 12 delicious cups.</p>
-                    </div>
-                    <div class="create-left-item-child">
+                    </label>
+                    <input class="checkbox visually-hidden"  id="aacc" name="theree" type="radio">
+                    <label class="create-left-item-child" for="aacc">
                       <h3 class="create-left-title-child">500g</h3>
                       <p class="create-left-text-child">Perfect option for a couple. Yields about 40 delectable cups.</p>
-                    </div>
-                    <div class="create-left-item-child">
+                    </label>
+                    <input class="checkbox visually-hidden"  id="aadd" name="theree" type="radio">
+                    <label class="create-left-item-child" for="aadd">
                       <h3 class="create-left-title-child">1000g</h3>
                       <p class="create-left-text-child">Perfect for offices and events. Yields about 90 delightful cups.</p>
-                    </div>
+                    </label>
                   </div>
               </li>
               <li class="create-left-box-item">
@@ -156,18 +171,21 @@
                     <button class="create-btn"></button>
                   </div>
                   <div class="create-left-list-child create-left-list-child-dn">
-                    <div class="create-left-item-child">
+                    <input class="checkbox visually-hidden"  id="aazz" name="four" type="radio">
+                    <label class="create-left-item-child" for="aazz">
                       <h3 class="create-left-title-child">Wholebean</h3>
                       <p class="create-left-text-child">Best choice if you cherish the full sensory experience</p>
-                    </div>
-                    <div class="create-left-item-child">
+                    </label>
+                    <input class="checkbox visually-hidden"  id="aavv" name="four" type="radio">
+                    <label class="create-left-item-child" for="aavv">
                       <h3 class="create-left-title-child">Filter</h3>
                       <p class="create-left-text-child">For drip or pour-over coffee methods such as V60 or Aeropress</p>
-                    </div>
-                    <div class="create-left-item-child">
+                    </label>
+                    <input class="checkbox visually-hidden"  id="aann" name="four" type="radio">
+                    <label class="create-left-item-child" for="aann">
                       <h3 class="create-left-title-child">Cafetiére</h3>
                       <p class="create-left-text-child">Course ground beans specially suited for french press coffee</p>
-                    </div>
+                    </label>
                   </div>
               </li>
               <li class="create-left-box-item">
@@ -176,18 +194,21 @@
                     <button class="create-btn"></button>
                   </div>
                   <div class="create-left-list-child create-left-list-child-dn">
-                    <div class="create-left-item-child">
+                    <input class="checkbox visually-hidden"  id="zzaa" name="five" type="radio">
+                    <label class="create-left-item-child" for="zzaa">
                       <h3 class="create-left-title-child">Every week</h3>
                       <p class="create-left-text-child">$7.20 per shipment. Includes free first-class shipping.</p>
-                    </div>
-                    <div class="create-left-item-child">
+                    </label>
+                    <input class="checkbox visually-hidden"  id="xxaa" name="five" type="radio">
+                    <label class="create-left-item-child" for="xxaa">
                       <h3 class="create-left-title-child">Every 2 weeks</h3>
                       <p class="create-left-text-child">$9.60 per shipment. Includes free priority shipping.</p>
-                    </div>
-                    <div class="create-left-item-child">
+                    </label>
+                    <input class="checkbox visually-hidden"  id="ccaa" name="five" type="radio">
+                    <label class="create-left-item-child" for="ccaa">
                       <h3 class="create-left-title-child">Every month</h3>
                       <p class="create-left-text-child">$12.00 per shipment. Includes free priority shipping.</p>
-                    </div>
+                    </label>
                   </div>
               </li>
             </ul>
@@ -204,7 +225,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </form>
 </main>
 
 
