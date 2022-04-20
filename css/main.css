@@ -144,6 +144,19 @@ body{
   padding-left: 130px;
 }
 
+.img-box{
+  display: flex;
+  position: relative;
+}
+
+.hero-img-icon{
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  left: -80px;
+  top: -80px;
+}
+
 .site-hero-box {
   width: 464px;
   margin-right: 116px;
@@ -164,21 +177,12 @@ body{
   margin-bottom: 24px;
 }
 
-
 .site-hero-text {
   margin-top: 0;
   margin-bottom: 34px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-}
-
-.site-hero-link{
-  display: inline-block;
-  margin: 0;
-  line-height: 19px;
-  background-color: #0A775F;
-  border: 2px solid #0A775F;
 }
 
 .button{
@@ -194,6 +198,12 @@ body{
   text-transform: uppercase;
   transition: color 0.4s ease, border 0.4s ease, background-color 0.4s ease;
   white-space: nowrap;
+}
+
+.site-hero-link{
+  line-height: 19px;
+  background-color: #0A775F;
+  border: 2px solid #0A775F;
 }
 
 .site-hero-link:hover{
@@ -300,7 +310,7 @@ body{
 /* ABOUT  */
 
 .site-commitment {
-  margin-bottom: 80px;
+  margin-bottom: 160px;
 }
 
 .site-commitment-block {
@@ -383,6 +393,7 @@ body{
   height: 60px;
   background-color: #fff;
   border: 4px solid #C99B67;
+  flex-shrink: 0;
 }
 
 .site-feature-item-two:not(:last-child){
@@ -395,6 +406,15 @@ body{
   margin-top: 0;
   margin-bottom: 80px;
   list-style-type: none;
+  position: relative;
+}
+
+.shrift-icon{
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  left: -50px;
+  top: -50px;
 }
 
 .site-feature-item:not(:last-child) {
@@ -431,15 +451,16 @@ body{
 
 .about-feature-block {
   display: flex;
-  padding: 0 30px 90px 143px;
+  padding: 100px 30px 90px 143px;
   background-image: url(../images/Rectangle-img.jpg);
   background-repeat: no-repeat;
-  background-size: 1400px 510px;
+  background-size: cover;
   background-position: bottom center;
+  position: relative;
 }
 
 .about-feature-box {
-  padding-top: 180px;
+  width: 640px;
   margin-right: 38px;
   color: #fff;
 }
@@ -462,9 +483,13 @@ body{
 }
 
 .about-feature-img{
+  position: absolute;
+  top: -80px;
+  right: 30px;
   width: 550px;
   height: 500px;
 }
+
 
 /* SITE-WORS */
 
@@ -474,8 +499,14 @@ body{
   background-image: url(../images/footter-top-img.jpg);
   background-repeat: no-repeat;
   margin-bottom: 50px;
+  position: relative;
 }
 
+.coffe-svg-img {
+  position: absolute;
+  right: 46px;
+  top: 26px;
+}
 
 .about-work-block-plan-a {
   padding: 80px 30px;
