@@ -85,7 +85,6 @@ body{
 .sitenav-item {
   font-weight: 700;
   list-style-type: none;
-  /* flex-shrink: 0; */
   white-space: nowrap;
 }
 
@@ -94,6 +93,8 @@ body{
 }
 
 .sitenav-link {
+  position: relative;
+  z-index: 5;
   display: flex;
   color: #333;
   font-size: 12px;
@@ -150,11 +151,11 @@ body{
 }
 
 .hero-img-icon{
-  width: 160px;
-  height: 160px;
+  width: 212px;
+  height: 212px;
   position: absolute;
-  left: -80px;
-  top: -80px;
+  left: -92px;
+  top: -81px;
 }
 
 .site-hero-box {
@@ -254,6 +255,23 @@ body{
   background-color: #F8F8F2;
   background-image: url(../images/oq-bijr-bijr.jpg);
   margin-bottom: 20px;
+  position: relative;
+}
+
+.leave-img {
+  width: 485px;
+  height: 380px;
+  position: absolute;
+  left: -215px;
+  top: 44px;
+}
+
+.leaf-img{
+  width: 346px;
+  height: 305px;
+  position: absolute;
+  bottom: 171px;
+  left: -223px;
 }
 
 .site-collection-headeing {
@@ -309,11 +327,8 @@ body{
 
 /* ABOUT  */
 
-.site-commitment {
-  margin-bottom: 160px;
-}
-
 .site-commitment-block {
+  position: relative;
   display: flex;
   padding: 160px 64px 200px 165px;
   background-image: url(../images/commitment-bc-img.png);
@@ -324,6 +339,7 @@ body{
   height: 364px;
   margin-right: 185px;
   object-fit: cover;
+  z-index: 2;
 }
 
 .site-commitment-box-title {
@@ -411,7 +427,7 @@ body{
 
 .shrift-icon{
   width: 140px;
-  height: 140px;
+  height: 144px;
   position: absolute;
   left: -50px;
   top: -50px;
@@ -446,6 +462,7 @@ body{
 
 /* ABOUT-FEATURE  */
 .about-festure {
+  margin-top: 160px;
   margin-bottom: 20px;
 }
 
@@ -695,11 +712,50 @@ ul{
   list-style-type: none;
 }
 
+.about-menu{
+  margin-bottom: 50px;
+}
+
 .create-plan-container {
   display: flex;
   padding: 50px 142px 50px 30px;
   justify-content: space-between;
   background-image: url(../images/commitment-bc-img.png);
+  position: relative;
+}
+
+.create-plan-leave-img{
+  width: 485px;
+  height: 380px;
+  position: absolute;
+  top: 714px;
+  left: -280px;
+}
+
+.create-plan-leaf-img {
+  display: none;
+  width: 346px;
+  height: 305px;
+  position: absolute;
+  top: 1466px;
+  left: -278px;
+}
+
+.create-plan-leaf-icon {
+  width: 546px;
+  height: 591px;
+  position: absolute;
+  top: 176px;
+  right: -380px;
+}
+
+
+.leaf-icon {
+  width: 546px;
+  height: 591px;
+  position: absolute;
+  top: 685px;
+  right: -300px;
 }
 
 .create-left-box-item{
