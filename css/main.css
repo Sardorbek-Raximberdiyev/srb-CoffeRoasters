@@ -789,6 +789,7 @@ ul{
 }
 
 .create-box-title{
+  position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
@@ -800,16 +801,39 @@ ul{
   font-size: 40px;
   line-height: 47px;
   font-weight: 700;
+  flex-grow: 1;
 }
 
 .create-btn{
+  display: flex;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.create-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.create-btn-box {
+  display: block;
   width: 20px;
   height: 20px;
-  border: 0;
   background-image: url(../images/icon-buttom.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 17px 14px;
+}
+
+.create-btn--active {
+  transform: rotate(180deg);
 }
 
 .create-left-list-child {
@@ -821,6 +845,7 @@ ul{
 }
 
 .create-left-item-child {
+  display: block;
   width: 206px;
   min-height: 220px;
   padding: 30px 16px;
@@ -828,6 +853,8 @@ ul{
   background-image: url(../images/Rectangle-create.png);
   background-repeat: no-repeat;
   transition: background-color 0.4s ease;
+  cursor: pointer;
+  flex-grow: 1;
 }
 
 .create-left-item-child:not(:last-child){
@@ -847,6 +874,7 @@ ul{
 
 
 .create-left-title-child {
+  display: block;
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 24px;
@@ -854,6 +882,7 @@ ul{
   font-weight: 700;
 }
 .create-left-text-child {
+  display: block;
   margin: 0;
   font-size: 18px;
   line-height: 24px;
