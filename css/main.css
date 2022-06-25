@@ -883,6 +883,7 @@ ul{
 }
 
 span{
+  /* display: block; */
   color: #333;
 }
 
@@ -906,14 +907,13 @@ span{
   background-color: #0A775F;
   opacity: 0.6;
 }
+
 .checkbox:checked + label {
-  color: #fff;
   background-color: #0A775F;
 }
 
-.checkbox:checked + label > span{
+.checkbox:checked + label > span {
   color: #fff;
-
 }
 
 
